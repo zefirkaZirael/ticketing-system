@@ -1,6 +1,6 @@
 # ticketing-system
 A web service for users to purchase electronic tickets to cultural venues (museums, exhibitions, etc.), with an admin panel for managing venues, tickets, and payments, and a QR-code-based entry control system — project name: "culture-ticketing"
-# 🎟️ Culture Ticketing System
+# Culture Ticketing System
 
 A full-featured web service for purchasing electronic tickets to cultural venues (museums, exhibitions, galleries, and more). The system includes a user-facing interface, an administrative panel for managing venues and payments, a QR-code-based access control system, and full integration with online payments.
 
@@ -58,31 +58,17 @@ A full-featured web service for purchasing electronic tickets to cultural venues
    ```bash
    git clone https://github.com/yourusername/culture-ticketing.git
    cd culture-ticketing
+   ```
 Setup backend
 
 ```bash
 cd backend
 pip install -r requirements.txt
 python manage.py migrate
-Setup frontend
-
-```bash
-cd ../frontend
-npm install
-npm run build
+```
 Run the project
 
 ```bash
 # Backend
 python manage.py runserver
-
-# Frontend
-npm start
-Environment Variables
-Create a .env file for backend:
-
-DB_URL=postgres://user:password@host:port/db
-SECRET_KEY=your-secret
-PAYMENT_API_KEY=xxx
-
-
+```
